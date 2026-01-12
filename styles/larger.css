@@ -11,9 +11,11 @@
   .navigation nav {
     display: flex;
     background-color: #666;
+    color: #fff;
     flex-direction: row;
     gap: 15px;
   }
+
   .navigation a {
     padding: 12px;
     color: white;
