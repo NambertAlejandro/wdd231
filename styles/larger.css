@@ -10,7 +10,7 @@
   }
   .navigation nav {
     display: flex;
-    background-color: #656565;
+    background-color: #666;
     flex-direction: row;
     gap: 15px;
   }

@@ -14,7 +14,7 @@ header img {
 .navigation a {
   display: block;
   padding-right: 35px;
-  background-color: #656565;
+  background-color: #666;
   color: white;
   text-decoration: none;
   border-right: 1px solid #444;
@@ -79,7 +79,7 @@ header img {
   display: flex;
   flex-direction: column;
   flex: 1;
-  background-color: #656565;
+  background-color: #666;
   color: white;
   text-decoration: none;
   text-align: center;
