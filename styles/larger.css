@@ -82,7 +82,7 @@
   .W1 a {
     flex: 1;
     padding: 16px 20px;
-    background-color: #777;
+    background-color: #666;
     color: white;
     border-radius: 8px;
     text-align: center;
@@ -97,7 +97,7 @@
     flex: 1;
     padding: 16px 20px;
     min-width: 40px;
-    background-color: #777;
+    background-color: #666;
     color: white;
     border-radius: 8px;
     text-align: center;
