@@ -1,0 +1,126 @@
+@media (min-width: 900px) {
+  .top {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  header img {
+    width: 50px;
+    height: auto;
+  }
+  .navigation nav {
+    display: flex;
+    background-color: #656565;
+    flex-direction: row;
+    gap: 15px;
+  }
+  .navigation a {
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+  }
+  main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+  }
+
+  main h1 {
+    grid-column: 1 / -1;
+  }
+
+  .info3 {
+    grid-column: 1 / -1;
+  }
+  .info1 {
+    background-color: #e0e0e0;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  .info1 h2 {
+    margin: 0;
+    text-align: center;
+    background-color: rgb(26, 26, 26);
+    color: white;
+    padding: 10px;
+  }
+  .info2 {
+    background-color: #e0e0e0;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  .info2 h2 {
+    margin: 0;
+    text-align: center;
+    background-color: rgb(26, 26, 26);
+    color: white;
+    padding: 10px;
+  }
+  .info2 img {
+    width: 300px;
+    padding-left: 10%;
+    padding-top: 20px;
+  }
+  .info3 h2 {
+    margin: 0;
+    text-align: center;
+    background-color: rgb(26, 26, 26);
+    color: white;
+    padding: 10px;
+  }
+  .info3 {
+    background-color: #e0e0e0;
+    padding: 20px;
+  }
+  .W1 {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+  .W1 a {
+    flex: 1;
+    padding: 16px 20px;
+    background-color: #777;
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+  }
+  .W2 {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  .W2 a {
+    flex: 1;
+    padding: 16px 20px;
+    min-width: 40px;
+    background-color: #777;
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+  }
+  .info3 p {
+    text-align: center;
+  }
+  .jsFooter {
+    background-color: #444;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  .socialMedia {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  .socialMedia img {
+    width: 32px;
+    height: 32px;
+  }
+}
