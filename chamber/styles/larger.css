@@ -22,6 +22,11 @@
     width: 100%;  
     text-align: center;
   }
+  .navigation a {
+  color: white;
+  padding: 12px;
+  text-decoration: none;
+}
   header{
     position: relative;
   }
