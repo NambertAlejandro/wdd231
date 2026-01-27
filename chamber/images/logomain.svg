@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" role="img" aria-label="SP Chamber of Commerce logo">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111"></stop>
+      <stop offset="1" stop-color="#444"></stop>
+    </linearGradient>
+  </defs>
+
+  <circle cx="80" cy="80" r="74" fill="url(#g)"></circle>
+  <circle cx="80" cy="80" r="74" fill="none" stroke="#ffffff" stroke-width="4" opacity="0.9"></circle>
+
+  <!-- skyline simples -->
+  <g fill="#ffffff" opacity="0.95">
+    <rect x="34" y="78" width="14" height="34" rx="2"></rect>
+    <rect x="52" y="66" width="18" height="46" rx="2"></rect>
+    <rect x="74" y="58" width="20" height="54" rx="2"></rect>
+    <rect x="98" y="70" width="18" height="42" rx="2"></rect>
+    <rect x="120" y="82" width="10" height="30" rx="2"></rect>
+  </g>
+
+  <!-- destaque "SP" -->
+  <text x="80" y="52" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#ffffff">
+    SP
+  </text>
+
+  <!-- legenda curta -->
+  <text x="80" y="134" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#ffffff" opacity="0.9" letter-spacing="1">
+    CHAMBER
+  </text>
+</svg>

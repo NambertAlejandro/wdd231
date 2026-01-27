@@ -1,0 +1,16 @@
+{
+    "familia":{
+        "moved":"00/00/00",
+        "familySize": {
+            "howMany": 0,
+            "numeroDeRegistro": 0
+        },
+        "visited" : true,
+        "individualInfo": {
+            "name" : "José",
+            "gender" : "Male",
+            "dateOfBirth" : "10/07/2003"
+        }    
+
+    }
+}
