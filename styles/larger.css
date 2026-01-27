@@ -1,4 +1,8 @@
 @media (min-width: 900px) {
+  body {
+  font-family: 'Roboto', sans-serif;
+}
+
   .top {
     display: flex;
     align-items: center;
