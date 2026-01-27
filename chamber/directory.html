@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="NambertAlejandro">
+    <meta name="description" content="This website will serve as a resource hub for businesses in the city of São Paulo. The site will provide information on local events, host networking opportunities, create business directories, and encourage local shopping. It aims to promote local economic growth, support local businesses, and foster a sense of community between the businesses.">
+    
+    <!--Meta for Facebook-->
+    <meta name="og:title" content="São Paulo Chamber of Commerce">
+    <meta name="og:image" content="http://127.0.0.1:5500/images/logomain.svg">
+    <meta name="og:url" content="http://127.0.0.1:5500/chamber/directory.html">
+    <meta name="og:description" content="This website is serve as a resource hub for businesses in the city of São Paulo.">
+
+
+    <link rel="icon" href="/images/logomain.ico">
+    <link rel="stylesheet" href="/styles/larger.css">
+    <link rel="stylesheet" href="/styles/small.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <script src="/scripts/date.js" defer></script>
+    <script src="/scripts/course.js" defer></script>
+    <script src="/scripts/navigation.js" defer></script>
+    <script src="/scripts/members.js" defer></script>
+    <script src="/scripts/weather.js" defer></script>
+    
+
+    <title>SP - Chamber of Commerce</title>
+</head>
+<body>
+    <header class="header">  
+        <div class="top">
+            <img src="/images/logomain.svg" alt="Logo main of the website">
+            <h2>São Paulo - Chamber Commerce</h2>
+        </div>
+
+        <button id="menuBtn" aria-label="Abrir menu" type="button">☰</button>
+
+        <div class="navigation" id="navigation">
+            <a href="/chamber/home.html">Home</a>
+            <a href="/chamber/directory.html">Directory</a>
+            <a href="/chamber/join.html">Join</a>
+            <a href="/chamber/discover.html">Discover</a>
+            <a href="/chamber/index.html">Home</a>
+            
+        </div>
+    </header>
+    <main>
+        <section class="info1">
+            <img src="/images/banner.png" alt="A banner of our community">
+        </section>
+        <h1>Home</h1>
+        <section class="home-panels">
+        <section class="info2">
+            <h2>Events</h2>
+            <div id="eventsList">
+            <p>- Loading events...</p>
+            </div>
+        </section>
+
+        <section class="info21">
+            <h2>Current Weather</h2>
+
+            <div class="current-weather">
+            <p><strong><span id="temp">--</span></strong></p>
+            <p id="desc">--</p>
+            <p>High: <span id="high">--</span></p>
+            <p>Low: <span id="low">--</span></p>
+            <p>Humidity: <span id="humidity">--</span></p>
+            <p>Sunrise: <span id="sunrise">--</span></p>
+            <p>Sunset: <span id="sunset">--</span></p>
+            </div>
+        </section>
+
+        <section class="info22">
+            <h2>Weather Forecast</h2>
+
+            <div class="forecast">
+            <p>Today: <strong><span id="today">--</span></strong></p>
+            <p><span id="day1-name">--</span>: <strong><span id="day1">--</span></strong></p>
+            <p><span id="day2-name">--</span>: <strong><span id="day2">--</span></strong></p>
+            </div>
+        </section>
+        </section>
+
+        <h2>Directory</h2>
+
+        <section class="view-controls">
+            <button id="gridBtn" type="button">Grid</button>
+            <button id="listBtn" type="button">List</button>
+        </section>
+
+        <section id="members" class="members grid"></section>
+        <div></div>
+        <span></span>
+    </main>
+    <footer>
+              <nav class="socialMedia">
+        <a href="https://www.facebook.com/"
+          ><img src="/images/facebook.svg" alt="facebook link"
+        /></a>
+        <a href="https://www.instagram.com/"
+          ><img src="/images/instagram.svg" alt="Instagram link"
+        /></a>
+        <a href="https://www.linkedin.com/in/nambert-alejandro-181864347"
+          ><img src="/images/linkedin.svg" alt="Linkedin link"
+        /></a>
+        <a href="https://x.com/"
+          ><img src="/images/twitter.svg" alt="Twitter link"
+        /></a>
+        <a href="https://github.com/NambertAlejandro/"
+          ><img src="/images/github.svg" alt="Github link"
+        /></a>
+      </nav>
+      <div class="jsFooter">
+        <p id="copyright"></p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+      </div>
+    </footer>
+</body>
+</html>

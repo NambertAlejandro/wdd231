@@ -1,0 +1,65 @@
+[
+  {
+    "businessName": "SP Tech Solutions",
+    "businessAddress": "Av. Paulista, 1000 - Bela Vista, São Paulo - SP",
+    "businessPhone": "+55 (11) 3333-1111",
+    "businessURL": "https://example.com/sptech",
+    "businessIMG": "sptech.png",
+    "businessLevel": 3,
+    "otherInfo": "Consultoria e software sob medida."
+  },
+  {
+    "businessName": "Café Paulista",
+    "businessAddress": "Rua Augusta, 250 - Consolação, São Paulo - SP",
+    "businessPhone": "+55 (11) 3333-2222",
+    "businessURL": "https://example.com/cafepaulista",
+    "businessIMG": "cafepaulista.png",
+    "businessLevel": 2,
+    "otherInfo": "Cafeteria artesanal e eventos."
+  },
+  {
+    "businessName": "Vila Fitness",
+    "businessAddress": "R. da Consolação, 800 - Consolação, São Paulo - SP",
+    "businessPhone": "+55 (11) 3333-3333",
+    "businessURL": "https://example.com/vilafitness",
+    "businessIMG": "vilafitness.png",
+    "businessLevel": 1,
+    "otherInfo": "Treinos personalizados e pilates."
+  },
+  {
+    "businessName": "Mercado Central SP",
+    "businessAddress": "Av. do Estado, 500 - Cambuci, São Paulo - SP",
+    "businessPhone": "+55 (11) 3333-4444",
+    "businessURL": "https://example.com/mercadocentral",
+    "businessIMG": "mercadocentral.png",
+    "businessLevel": 1,
+    "otherInfo": "Hortifruti e produtos regionais."
+  },
+  {
+    "businessName": "Studio Criativo 011",
+    "businessAddress": "Rua Oscar Freire, 120 - Jardins, São Paulo - SP",
+    "businessPhone": "+55 (11) 3333-5555",
+    "businessURL": "https://example.com/studio011",
+    "businessIMG": "studio011.png",
+    "businessLevel": 2,
+    "otherInfo": "Design, branding e social media."
+  },
+  {
+    "businessName": "Construtora Horizonte",
+    "businessAddress": "Av. Brigadeiro Faria Lima, 2000 - Itaim Bibi, São Paulo - SP",
+    "businessPhone": "+55 (11) 3333-6666",
+    "businessURL": "https://example.com/horizonte",
+    "businessIMG": "horizonte.png",
+    "businessLevel": 3,
+    "otherInfo": "Obras comerciais e residenciais."
+  },
+  {
+    "businessName": "Clínica Saúde Norte",
+    "businessAddress": "Av. Cruzeiro do Sul, 900 - Santana, São Paulo - SP",
+    "businessPhone": "+55 (11) 3333-7777",
+    "businessURL": "https://example.com/saudenorte",
+    "businessIMG": "saudenorte.png",
+    "businessLevel": 1,
+    "otherInfo": "Atendimento clínico e exames."
+  }
+]
