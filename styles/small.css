@@ -7,31 +7,50 @@ header img {
   width: 50px;
   height: auto;
 }
-.navigation {
+header {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  position: relative;
+}
+
+.navigation {
+  display: none;
   flex-direction: column;
+  background-color: #333;
+  position: absolute;
+  top: 100%;
+  left: 0;
+
 }
+
 .navigation a {
-  display: block;
-  padding-right: 35px;
-  background-color: #666;
   color: white;
+  padding: 12px;
   text-decoration: none;
-  border-right: 1px solid #444;
-  text-align: center;
 }
+
+.navigation.open {
+  display: flex;
+}
+
+#menuBtn {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
 .info1 {
-  background-color: #e0e0e0;
   padding: 20px;
   margin-bottom: 20px;
 }
-.info1 h2 {
-  margin: 0;
-  text-align: center;
-  background-color: rgb(26, 26, 26);
-  color: white;
-  padding: 10px;
+.info1 img{
+  width: 100%;
+  background-color: transparent !important;
 }
+
 .info2 {
   background-color: #e0e0e0;
   padding: 20px;
@@ -49,6 +68,40 @@ header img {
   padding-left: 10%;
   padding-top: 20px;
 }
+  .info21 {
+    background-color: #e0e0e0;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  .info21 h2 {
+    margin: 0;
+    text-align: center;
+    background-color: rgb(26, 26, 26);
+    color: white;
+    padding: 10px;
+  }
+  .info21 img {
+    width: 300px;
+    padding-left: 10%;
+    padding-top: 20px;
+  }
+  .info22 {
+    background-color: #e0e0e0;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  .info22 h2 {
+    margin: 0;
+    text-align: center;
+    background-color: rgb(26, 26, 26);
+    color: white;
+    padding: 10px;
+  }
+  .info22 img {
+    width: 300px;
+    padding-left: 10%;
+    padding-top: 20px;
+  }
 .info3 h2 {
   margin: 0;
   text-align: center;
@@ -60,6 +113,47 @@ header img {
   background-color: #e0e0e0;
   padding: 20px;
 }
+.view-controls {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0 20px;
+}
+
+.members.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.members.list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.member-card {
+  border: 1px solid #ccc;
+  padding: 16px;
+  border-radius: 10px;
+}
+
+.member-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.members.list .member-card {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 12px;
+  align-items: center;
+}
+
+.members.list .member-card img {
+  width: 120px;
+}
+
 .W1 {
   display: flex;
   gap: 10px;
@@ -106,3 +200,47 @@ header img {
   width: 32px;
   height: 32px;
 }
+
+.home-panels {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  align-items: stretch;
+}
+
+/* opcional: deixa textos alinhados e bonitos */
+.current-weather, .forecast {
+  padding-top: 10px;
+}
+
+.current-weather p, .forecast p {
+  margin: 6px 0;
+}
+
+#temp {
+  font-size: 1.6rem;
+}
+.cta-button {
+  display: inline-block;
+  background-color: green;
+  color: white;
+  padding: 14px 24px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  text-align: center;
+  margin-left: 45%;
+}
+
+.cta-button:hover {
+  background-color: black;
+}
+#spotlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+
+

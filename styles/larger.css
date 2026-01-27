@@ -4,47 +4,34 @@
     align-items: center;
     gap: 20px;
   }
+  
   header img {
     width: 50px;
     height: auto;
   }
-  .navigation nav {
+  .navigation {
     display: flex;
-    background-color: #666;
-    color: #fff;
-    flex-direction: row;
-    gap: 15px;
-  }
-
-  .navigation a {
-    padding: 12px;
-    color: white;
-    text-decoration: none;
-  }
-  main {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 20px;
-  }
-
-  main h1 {
-    grid-column: 1 / -1;
-  }
-
-  .info3 {
-    grid-column: 1 / -1;
-  }
-  .info1 {
-    background-color: #e0e0e0;
-    padding: 20px;
-    margin-bottom: 20px;
-  }
-  .info1 h2 {
-    margin: 0;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;  
     text-align: center;
-    background-color: rgb(26, 26, 26);
-    color: white;
-    padding: 10px;
+  }
+  header{
+    position: relative;
+  }
+  .info1{
+    grid-column: 1 / -1;        
+    background: transparent !important;       
+    padding: 0;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;      
+  }
+
+  .info1 img{
+    max-width: 100%;
   }
   .info2 {
     background-color: #e0e0e0;
@@ -59,6 +46,40 @@
     padding: 10px;
   }
   .info2 img {
+    width: 300px;
+    padding-left: 10%;
+    padding-top: 20px;
+  }
+  .info21 {
+    background-color: #e0e0e0;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  .info21 h2 {
+    margin: 0;
+    text-align: center;
+    background-color: rgb(26, 26, 26);
+    color: white;
+    padding: 10px;
+  }
+  .info21 img {
+    width: 300px;
+    padding-left: 10%;
+    padding-top: 20px;
+  }
+  .info22 {
+    background-color: #e0e0e0;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  .info22 h2 {
+    margin: 0;
+    text-align: center;
+    background-color: rgb(26, 26, 26);
+    color: white;
+    padding: 10px;
+  }
+  .info22 img {
     width: 300px;
     padding-left: 10%;
     padding-top: 20px;
@@ -125,4 +146,47 @@
     width: 32px;
     height: 32px;
   }
+
+.home-panels {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  align-items: stretch;
 }
+
+/* opcional: deixa textos alinhados e bonitos */
+.current-weather, .forecast {
+  padding-top: 10px;
+}
+
+.current-weather p, .forecast p {
+  margin: 6px 0;
+}
+
+#temp {
+  font-size: 1.6rem;
+}
+.cta-button {
+  display: inline-block;
+  background-color: green;
+  color: white;
+  padding: 14px 24px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.cta-button:hover {
+  background-color: black;
+}
+#spotlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+}
+
+
