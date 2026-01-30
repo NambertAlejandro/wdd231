@@ -36,7 +36,7 @@ function renderSpotlights(selected) {
     card.classList.add("member-card");
 
     // Ajuste o caminho conforme seu projeto
-    const imgPath = `/images/${m.businessIMG}`;
+    const imgPath = `images/${m.businessIMG}`;
 
     card.innerHTML = `
       <img src="${imgPath}" alt="${m.businessName} logo" loading="lazy">

@@ -31,7 +31,7 @@ function renderMembers(members) {
     card.classList.add("member-card");
 
     // ajuste o caminho da imagem conforme onde você salvou
-    const imgPath = `/images/members/${m.businessIMG}`;
+    const imgPath = `images/${m.businessIMG}`;
 
     card.innerHTML = `
       <img src="${imgPath}" alt="${m.businessName} logo" loading="lazy">

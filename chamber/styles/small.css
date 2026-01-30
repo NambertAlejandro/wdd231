@@ -1,42 +1,30 @@
 body {
   font-family: 'Roboto', sans-serif;
+  background-image: url("../images/banner.png");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  text-align: center;
 }
 
 .top {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 6px;
 }
+
 header img {
   width: 50px;
-  height: auto;
-}
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-  position: relative;
-}
-
-.navigation {
-  display: none;
-  flex-direction: column;
-  background-color: #333;
-  position: absolute;
-  top: 100%;
-  left: 0;
-
-}
-
-.navigation a {
-  color: white;
-  padding: 12px;
-  text-decoration: none;
-}
-
-.navigation.open {
-  display: flex;
 }
 
 #menuBtn {
@@ -44,78 +32,119 @@ header {
   background: none;
   border: none;
   cursor: pointer;
+  z-index: 1001;
+}
+
+.navigation {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 320px;
+  background-color: #222;
+  border-radius: 12px;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.navigation.open {
+  display: flex;
+}
+
+.navigation a {
+  padding: 14px;
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid #444;
+  text-align: center;
+}
+
+.navigation a:last-child {
+  border-bottom: none;
 }
 
 .info1 {
-  padding: 20px;
-  margin-bottom: 20px;
-}
-.info1 img{
-  width: 100%;
-  background-color: transparent !important;
+  position: relative;
+  margin-bottom: 24px;
 }
 
-.info2 {
-  background-color: #e0e0e0;
-  padding: 20px;
-  margin-bottom: 20px;
+.info1 img {
+  width: 100%;
+  display: block;
 }
-.info2 h2 {
-  margin: 0;
-  text-align: center;
-  background-color: rgb(26, 26, 26);
+
+.cta-button {
+  position: absolute;
+  left: 50%;
+  bottom: 14px;
+  transform: translateX(-50%);
+  background-color: #0b7a0b;
   color: white;
-  padding: 10px;
+  padding: 12px 22px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 10px;
 }
-.info2 img {
-  width: 300px;
-  padding-left: 10%;
-  padding-top: 20px;
-}
-  .info21 {
-    background-color: #e0e0e0;
-    padding: 20px;
-    margin-bottom: 20px;
-  }
-  .info21 h2 {
-    margin: 0;
-    text-align: center;
-    background-color: rgb(26, 26, 26);
-    color: white;
-    padding: 10px;
-  }
-  .info21 img {
-    width: 300px;
-    padding-left: 10%;
-    padding-top: 20px;
-  }
-  .info22 {
-    background-color: #e0e0e0;
-    padding: 20px;
-    margin-bottom: 20px;
-  }
-  .info22 h2 {
-    margin: 0;
-    text-align: center;
-    background-color: rgb(26, 26, 26);
-    color: white;
-    padding: 10px;
-  }
-  .info22 img {
-    width: 300px;
-    padding-left: 10%;
-    padding-top: 20px;
-  }
-.info3 h2 {
-  margin: 0;
-  text-align: center;
-  background-color: rgb(26, 26, 26);
-  color: white;
-  padding: 10px;
-}
+
+.info2,
+.info21,
+.info22,
 .info3 {
   background-color: #e0e0e0;
   padding: 20px;
+  margin-bottom: 20px;
+}
+
+.info2 h2,
+.info21 h2,
+.info22 h2,
+.info3 h2 {
+  background-color: #1a1a1a;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin: 0;
+}
+
+.home-panels {
+  display: grid;
+  gap: 12px;
+}
+
+.member-card {
+  background-color: #e0e0e0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.member-card img {
+  width: 100%;
+  background: white;
+  padding: 6px;
+  border-radius: 6px;
+}
+
+.jsFooter {
+  background-color: #444;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.socialMedia {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.socialMedia img {
+  width: 32px;
 }
 .view-controls {
   display: flex;
@@ -123,128 +152,32 @@ header {
   margin: 10px 0 20px;
 }
 
-.members.grid {
+#members.grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 16px;
 }
 
-.members.list {
+#members.list {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
 
-.member-card {
-  border: 1px solid #ccc;
-  padding: 16px;
-  border-radius: 10px;
-}
-
-.member-card img {
+#members .member-card img {
   width: 100%;
   height: auto;
   display: block;
 }
 
-.members.list .member-card {
+#members.list .member-card {
   display: grid;
-  grid-template-columns: 120px 1fr;
+  grid-template-columns: 140px 1fr;
   gap: 12px;
   align-items: center;
 }
 
-.members.list .member-card img {
-  width: 120px;
+#members.list .member-card img {
+  width: 140px;
+  max-width: 140px;
 }
-
-.W1 {
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-  margin-bottom: 15px;
-  margin-top: 15px;
-}
-.W1 a {
-  flex: 1;
-  background-color: #666;
-  color: white;
-  border-radius: 8px;
-  text-align: center;
-}
-
-.W2 a {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  background-color: #666;
-  color: white;
-  text-decoration: none;
-  text-align: center;
-  border: 1px solid #444;
-}
-.info3 p {
-  text-align: center;
-}
-.jsFooter {
-  background-color: #444;
-  color: white;
-  text-align: center;
-  padding: 10px;
-}
-.socialMedia {
-  display: flex;
-  gap: 16px;
-  justify-content: center;
-  align-items: center;
-  margin-top: 10px;
-  margin-bottom: 5px;
-}
-.socialMedia img {
-  width: 32px;
-  height: 32px;
-}
-
-.home-panels {
-  display: grid;
-  gap: 12px;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  align-items: stretch;
-}
-
-/* opcional: deixa textos alinhados e bonitos */
-.current-weather, .forecast {
-  padding-top: 10px;
-}
-
-.current-weather p, .forecast p {
-  margin: 6px 0;
-}
-
-#temp {
-  font-size: 1.6rem;
-}
-.cta-button {
-  display: inline-block;
-  background-color: green;
-  color: white;
-  padding: 14px 24px;
-  text-decoration: none;
-  font-size: 1.1rem;
-  font-weight: bold;
-  border-radius: 8px;
-  text-align: center;
-  margin-left: 45%;
-}
-
-.cta-button:hover {
-  background-color: black;
-}
-#spotlights {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 16px;
-}
-
-
-
