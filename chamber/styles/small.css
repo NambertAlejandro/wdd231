@@ -38,6 +38,7 @@ header {
   display: none;
   flex-direction: column;
   background-color: #333;
+  color: #fff; /* <<< CORREÇÃO DO CONTRASTE */
   position: absolute;
   top: 100%;
   left: 0;
@@ -136,6 +137,19 @@ header {
   display: flex;
   gap: 10px;
   margin: 10px 0 20px;
+}
+
+.view-controls button {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #444;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.view-controls button:hover {
+  background-color: #111;
 }
 
 .members.grid {
@@ -238,16 +252,4 @@ header {
     padding: 12px 22px;
     font-size: 1rem;
   }
-}
-.view-controls button {
-  background-color: #333;
-  color: #fff;
-  border: 1px solid #444;
-  padding: 8px 12px;
-  border-radius: 6px;
-  cursor: pointer;
-}
-
-.view-controls button:hover {
-  background-color: #111;
 }
